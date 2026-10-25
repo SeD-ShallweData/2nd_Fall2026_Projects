@@ -1,4 +1,4 @@
-name: Team Bbigeudeok public checks
+name: BbiGeuDeok public checks
 on:
   push:
     paths: ['BbiGeuDeok/**', '.github/workflows/team-bbigeudeok.yml']

@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/workflows/team-bbigeudeok.yml",
-      "bytes": 608,
-      "sha256": "5db89671c5c2f41c0c818c4831869fa94949434595faf6d5d6576103ac8df593"
+      "bytes": 582,
+      "sha256": "c768e9a5ceb07cd9d660cf82c204fb53465ececbd958ac64c0342586b1433993"
     },
     {
       "path": ".gitignore",
@@ -234,8 +234,8 @@
     },
     {
       "path": "BbiGeuDeok/docs/SYNC.md",
-      "bytes": 4187,
-      "sha256": "ff5d35b40b87dd73cbaf135f2b50cdc09ea45ae065735d3718e01f3222d608a3"
+      "bytes": 4331,
+      "sha256": "249e9192f3773f5d7caf82971aba5921fd0528edebd9bb1202f5e9f19415652d"
     },
     {
       "path": "BbiGeuDeok/requirements-observed.txt",
