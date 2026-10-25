@@ -6,11 +6,11 @@ const fs=require('node:fs');
 const path=require('node:path');
 const work=path.resolve(__dirname,'../Code/sk_admin_mapping');
 class Element {
-  constructor(id=''){this.id=id;this.value='';this.textContent='';this.innerHTML='';this.hidden=false;this.disabled=false;this.children=[];this.options=[{},{}];this.events={};this.dataset={};this.attributes={};this.classList={add(){},remove(){},toggle(){return true;}};}
+  constructor(id=''){this.id=id;this.value='';this.textContent='';this.innerHTML='';this.hidden=false;this.disabled=false;this.children=[];this.options=[{},{}];this.events={};this.dataset={};this.attributes={};this.style={};this.classList={add(){},remove(){},toggle(){return true;}};}
   addEventListener(type,fn){(this.events[type]??=[]).push(fn);}
   emit(type){for(const fn of this.events[type]||[])fn({preventDefault(){}});}
   setAttribute(k,v){this.attributes[k]=v;} removeAttribute(k){delete this.attributes[k];}
-  replaceChildren(...children){this.children=children;this.innerHTML='';} append(x){this.children.push(x);}
+  replaceChildren(...children){this.children=children;this.innerHTML='';} append(...children){this.children.push(...children);}
   insertAdjacentHTML(position,html){this.innerHTML=position==='afterbegin'?html+this.innerHTML:this.innerHTML+html;}
   focus(){} remove(){}
 }
@@ -53,3 +53,21 @@ test('HOLD labels never turn undetermined relationship signals into OFF',async()
 function welfareEnvironment(status){const controllers={};const api={context:{city:'11230',dong:'00000001'},page:'welfare',safe:v=>String(v??''),request:async()=>({data_status:status,counts:{candidate:0,needs_confirmation:0,excluded:0},results:{candidate:[],needs_confirmation:[],excluded:[]},mode:'current',as_of:'2000-01-01',support_search_status:'RO_CANDIDATE_REVIEW'}),register:(n,c)=>controllers[n]=c,invalidateAgent(){},roaCatalog:async()=>({as_of_default:'2000-01-01'})};return {...environment('welfare_explorer.js',{Dashboard:api}),controllers};}
 test('resource collection status distinguishes missing detail, conflicts and confirmed availability',async()=>{const e=welfareEnvironment({source:'API_PLUS_LOCAL',api_status:{service_join:{list_without_detail_ids:['synthetic-missing']}},id_attribute_conflicts_local_kept:['synthetic-a','synthetic-b'],currently_available_confirmed_count:0});await e.controllers.welfare.enter();assert.match(e.node('r-data-status').textContent,/상세 누락 1건/);assert.match(e.node('r-data-status').textContent,/속성 충돌 2건/);assert.match(e.node('r-data-status').textContent,/이용 가능 확정 0건/);assert.equal(e.node('r-page').textContent,'조회 결과 없음');});
 test('local-only resource status reports unknown API detail completeness rather than zero',async()=>{const e=welfareEnvironment({source:'LOCAL_CATALOG'});await e.controllers.welfare.enter();assert.match(e.node('r-data-status').textContent,/상세 누락 미확인/);assert.doesNotMatch(e.node('r-data-status').textContent,/상세 누락 0건/);});
+
+test('protected demo login redirect becomes an explicit notice without replaying Agent POST',async()=>{
+  const calls=[];const origin='https://synthetic-demo.trycloudflare.com';
+  const e=environment('dashboard.js',{location:{protocol:'https:',hostname:'synthetic-demo.trycloudflare.com',origin,pathname:'/',hash:'#/agent'},fetch:async(url,options)=>{calls.push({url,options});return {type:'opaqueredirect',status:0};}});
+  const original=e.doc.getElementById;e.doc.getElementById=id=>id==='demo-auth-required'?(e.nodes.get(id)||null):original(id);
+  const banners=[];e.doc.body={prepend:element=>{banners.push(element);e.nodes.set(element.id,element);}};
+  await assert.rejects(e.scope.Dashboard.request('/api/agent',{}, {engine:'llm',question:'SYNTHETIC_PRIVATE_QUESTION'}),/접속 인증을 갱신/);
+  assert.equal(calls.length,1);assert.equal(calls[0].options.method,'POST');assert.equal(calls[0].options.redirect,'manual');
+  await assert.rejects(e.scope.Dashboard.request('/api/catalog'),/접속 인증을 갱신/);assert.equal(banners.length,1);
+  assert.doesNotMatch(banners[0].children[0].textContent,/SYNTHETIC_PRIVATE_QUESTION/);
+  assert.equal(banners[0].children[1].href,origin+'/#/agent');
+});
+test('local requests and successful protected demo requests retain existing JSON behavior',async()=>{
+  for(const remote of [false,true]){const calls=[];const location=remote?{protocol:'https:',hostname:'synthetic-demo.trycloudflare.com'}:{protocol:'http:',hostname:'127.0.0.1'};
+    const e=environment('dashboard.js',{location,fetch:async(url,options)=>{calls.push(options);return {type:'basic',status:200,ok:true,json:async()=>({synthetic:true})};}});
+    assert.equal((await e.scope.Dashboard.request('/api/catalog')).synthetic,true);assert.equal(calls.length,1);assert.equal(calls[0].redirect,remote?'manual':undefined);
+  }
+});

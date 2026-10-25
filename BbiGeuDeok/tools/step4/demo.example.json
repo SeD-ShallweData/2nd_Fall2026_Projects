@@ -1,0 +1,15 @@
+{
+  "mode": "preview",
+  "access_mode": "cloudflare_email",
+  "allowed_emails": ["replace-with-your-email@example.com"],
+  "reuse_inspected_backend": false,
+  "data_rights": {"confirmed": false, "evidence": ""},
+  "third_party_content_reviewed": false,
+  "team_test_authorization": {
+    "approved_by_user": false,
+    "scope": "",
+    "instruction": "",
+    "relay": "Cloudflare Quick Tunnel",
+    "provider": "https://api.upstage.ai"
+  }
+}

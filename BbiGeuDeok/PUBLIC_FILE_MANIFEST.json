@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/workflows/team-bbigeudeok.yml",
-      "bytes": 710,
-      "sha256": "2ed17049268a763193cde4fc8dc84aee2aac2cf36b3bdae266b5b90dd153a759"
+      "bytes": 830,
+      "sha256": "4081a305a8d0500d5e918d09cc758d2bc7aa56cc7b60da30e5226d40a4ef86e5"
     },
     {
       "path": ".gitignore",
@@ -69,8 +69,8 @@
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/dashboard.js",
-      "bytes": 7030,
-      "sha256": "fadb137300f97806cb93ca06b2b78b7ac5ed39e0475f20a7fcdaa1a5856be954"
+      "bytes": 8151,
+      "sha256": "c0e049f13897b32c9e1f2516ac832d6ca6564c72603aa852700ce7ebb4b3404d"
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/dashboard_service.py",
@@ -174,8 +174,8 @@
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/spatial_explorer.html",
-      "bytes": 17198,
-      "sha256": "8b2703099bdf01b8f4807bdfb5e3712918b01dc105fe2aff48c5d36f695c27c0"
+      "bytes": 17264,
+      "sha256": "8e28b028b95c43c9e7f73e312324af08ba9b8194bbfad4d3d599c5e6834c399f"
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/spatial_explorer.py",
@@ -224,8 +224,8 @@
     },
     {
       "path": "BbiGeuDeok/README.md",
-      "bytes": 7099,
-      "sha256": "a63bc82f8dd82a0d9e386beea5e5a1f3fed2099a9a651a5ff5f4a46fd8442030"
+      "bytes": 7504,
+      "sha256": "674da34061dd07c4d3aa8df3bc9f2221f9679410e24da454bc7e799d9bd8850d"
     },
     {
       "path": "BbiGeuDeok/docs/API.md",
@@ -239,8 +239,8 @@
     },
     {
       "path": "BbiGeuDeok/docs/DEPLOYMENT_READINESS.md",
-      "bytes": 3678,
-      "sha256": "c216f0109c8db17e8fef6fab857a1a0a6fa2eb9fe33a10f04d567f2a9b958780"
+      "bytes": 3885,
+      "sha256": "8d21673930f14fc333195662b2711786e4f904fc642b84559e56a5c843f333d8"
     },
     {
       "path": "BbiGeuDeok/docs/REPRODUCIBILITY.md",
@@ -256,6 +256,11 @@
       "path": "BbiGeuDeok/docs/STEP3_UI_REFERENCES.md",
       "bytes": 2096,
       "sha256": "be0b23a1dcf366e2adffcf02f631a1e098a50ad1797a51176b3035cba34db8dc"
+    },
+    {
+      "path": "BbiGeuDeok/docs/STEP4A_DEMO.md",
+      "bytes": 5286,
+      "sha256": "5ac8e82fcd90d78e4a7f071c9cdced52fd80ee458dfff59029e45c09272a796d"
     },
     {
       "path": "BbiGeuDeok/docs/SYNC.md",
@@ -279,8 +284,38 @@
     },
     {
       "path": "BbiGeuDeok/tests/test_ui_state.cjs",
-      "bytes": 11570,
-      "sha256": "874a3b03b9e4b0df4c3dbcc048abcc48834c46cf4bea91044972d36d7bcbcf1e"
+      "bytes": 13448,
+      "sha256": "65856ddba458ef4097a823f0e6e6e841d05e3f05a6b54645267d4cf4e86089b8"
+    },
+    {
+      "path": "BbiGeuDeok/tools/step4/README.md",
+      "bytes": 3944,
+      "sha256": "b00fec4bc96c26fb58331063e479c55a1e5cb5849c8daaf604dbc68470b26bb7"
+    },
+    {
+      "path": "BbiGeuDeok/tools/step4/demo.example.json",
+      "bytes": 442,
+      "sha256": "8bb71f273fa18812a01482a63931f774b7bb1a095a4da4a28df017be0520438c"
+    },
+    {
+      "path": "BbiGeuDeok/tools/step4/demo_gateway.py",
+      "bytes": 18442,
+      "sha256": "80e67231db73cf490d5022e7926973b164d21be4a021f2f4f70a26adea79ae81"
+    },
+    {
+      "path": "BbiGeuDeok/tools/step4/preview.html",
+      "bytes": 5248,
+      "sha256": "a070788daffb0a48df623b015ffabf3aaa0d7f08cd6d7469f141c901e8d87935"
+    },
+    {
+      "path": "BbiGeuDeok/tools/step4/run_demo.py",
+      "bytes": 14751,
+      "sha256": "0a5972b4aacc7cd3e620e491feb54473364242683d4d3825a5186909591e03e9"
+    },
+    {
+      "path": "BbiGeuDeok/tools/step4/test_demo_gateway.py",
+      "bytes": 13580,
+      "sha256": "083730141156132dd6151c2ed635c07d19ed36b20861026cb94ae652d136c38b"
     },
     {
       "path": "README.md",

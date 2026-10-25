@@ -18,6 +18,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -B -m unittest discover -s tests -v
+      - name: Synthetic demo gateway boundaries (loopback only)
+        run: python -B tools/step4/test_demo_gateway.py
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
