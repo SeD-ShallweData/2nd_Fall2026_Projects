@@ -43,7 +43,7 @@ flowchart LR
 저장소 루트에서 팀 폴더로 이동한 뒤 실행합니다. 아래 최소 테스트는 Python 표준 라이브러리만 사용하며 외부 키·데이터·네트워크가 필요하지 않습니다.
 
 ```powershell
-cd Team_Bbigeudeok
+cd BbiGeuDeok
 python -B -m unittest discover -s tests -v
 ```
 
