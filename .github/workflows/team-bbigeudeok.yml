@@ -1,9 +1,9 @@
 name: Team Bbigeudeok public checks
 on:
   push:
-    paths: ['Team_Bbigeudeok/**', '.github/workflows/team-bbigeudeok.yml']
+    paths: ['BbiGeuDeok/**', '.github/workflows/team-bbigeudeok.yml']
   pull_request:
-    paths: ['Team_Bbigeudeok/**', '.github/workflows/team-bbigeudeok.yml']
+    paths: ['BbiGeuDeok/**', '.github/workflows/team-bbigeudeok.yml']
 permissions:
   contents: read
 jobs:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: Team_Bbigeudeok
+        working-directory: BbiGeuDeok
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
