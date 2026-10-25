@@ -9,18 +9,13 @@
     },
     {
       "path": ".github/workflows/team-bbigeudeok.yml",
-      "bytes": 582,
-      "sha256": "c768e9a5ceb07cd9d660cf82c204fb53465ececbd958ac64c0342586b1433993"
+      "bytes": 710,
+      "sha256": "2ed17049268a763193cde4fc8dc84aee2aac2cf36b3bdae266b5b90dd153a759"
     },
     {
       "path": ".gitignore",
       "bytes": 491,
       "sha256": "ef0afeb7a92d19b1aa96ba01d7247faf81acc441633e45a453b604c4846e448f"
-    },
-    {
-      "path": "README.md",
-      "bytes": 401,
-      "sha256": "09d70b794419d18ed69b9ca0ba6fa7b9fde71a3ce3a3db42b91a8438274c87dc"
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/01_데이터_준비.ipynb",
@@ -43,6 +38,11 @@
       "sha256": "c970551ea192e941242e3ab07815d29c25b257b76da47f42afbe1f1893e44cc4"
     },
     {
+      "path": "BbiGeuDeok/Code/sk_admin_mapping/activity_explorer.js",
+      "bytes": 14157,
+      "sha256": "592ff29df8a712e48aab83db492605e55608b34b60ef30988c857c55586d9e41"
+    },
+    {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/build_agent_input.py",
       "bytes": 15785,
       "sha256": "3f35a07b9d3abe8dd85a5a564412409cc5e2e63f125118d05995cc4a70e438ca"
@@ -61,6 +61,16 @@
       "path": "BbiGeuDeok/Code/sk_admin_mapping/config.example.json",
       "bytes": 5720,
       "sha256": "6ca9ae94e256a2e30a651f62767d4840bc338494958ed0c72ce2574d78f2b7b6"
+    },
+    {
+      "path": "BbiGeuDeok/Code/sk_admin_mapping/dashboard.css",
+      "bytes": 17576,
+      "sha256": "55984c513bcc2e9770b303f89c0a9284a7d96531730202a815c852a5c2c63f1b"
+    },
+    {
+      "path": "BbiGeuDeok/Code/sk_admin_mapping/dashboard.js",
+      "bytes": 7030,
+      "sha256": "fadb137300f97806cb93ca06b2b78b7ac5ed39e0475f20a7fcdaa1a5856be954"
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/dashboard_service.py",
@@ -129,8 +139,8 @@
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/roa_dashboard.js",
-      "bytes": 26184,
-      "sha256": "319d8833b215399ced89f42276e68ffb41ed85c0961f30241c8d814810f74f73"
+      "bytes": 13136,
+      "sha256": "7a70b79c7a46d2f90ae4f2f2ed2aa74d15840e3e7b11b86702289ff5d9025d76"
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/roa_data.py",
@@ -164,13 +174,13 @@
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/spatial_explorer.html",
-      "bytes": 22645,
-      "sha256": "669cf0835eae319c66a7a1be0902bf0e4bf354964e96341b29bd6fee089a27db"
+      "bytes": 17198,
+      "sha256": "8b2703099bdf01b8f4807bdfb5e3712918b01dc105fe2aff48c5d36f695c27c0"
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/spatial_explorer.py",
-      "bytes": 41916,
-      "sha256": "9be593cdae01ae85a2b22d60326c1f1b02240e31534714527fe3370cfd4fcc9c"
+      "bytes": 42196,
+      "sha256": "f67cf8d9b90859ecac2bcaf9f3e92f58fa1cec54d76fcd1702e81d3c2246ac57"
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/welfare_api.py",
@@ -186,6 +196,11 @@
       "path": "BbiGeuDeok/Code/sk_admin_mapping/welfare_contract.json",
       "bytes": 3040,
       "sha256": "1de2607aca52361cd02d08bea9256251ee86e3f0bcc9e66ac20e46c0665e669b"
+    },
+    {
+      "path": "BbiGeuDeok/Code/sk_admin_mapping/welfare_explorer.js",
+      "bytes": 10682,
+      "sha256": "c9ea264af6a066625b6179ed20aa595a920229e2516174c5d036b8f3d09d7cab"
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/welfare_resources.py",
@@ -209,8 +224,8 @@
     },
     {
       "path": "BbiGeuDeok/README.md",
-      "bytes": 6743,
-      "sha256": "8e86f687612deea194f169ffd62f1657d52fba96a327d99385f42b3a5baa5dcc"
+      "bytes": 7099,
+      "sha256": "a63bc82f8dd82a0d9e386beea5e5a1f3fed2099a9a651a5ff5f4a46fd8442030"
     },
     {
       "path": "BbiGeuDeok/docs/API.md",
@@ -233,6 +248,16 @@
       "sha256": "09e2032ac730f24c944ee495cda556a0826f884d40012ddd8a99ae6db3153f04"
     },
     {
+      "path": "BbiGeuDeok/docs/STEP3_UI.md",
+      "bytes": 6606,
+      "sha256": "2aeecb74bbaa2d0c44be669c12335307f251cbf9034f9694d87ac1d84ae5b2e5"
+    },
+    {
+      "path": "BbiGeuDeok/docs/STEP3_UI_REFERENCES.md",
+      "bytes": 2096,
+      "sha256": "be0b23a1dcf366e2adffcf02f631a1e098a50ad1797a51176b3035cba34db8dc"
+    },
+    {
       "path": "BbiGeuDeok/docs/SYNC.md",
       "bytes": 4331,
       "sha256": "249e9192f3773f5d7caf82971aba5921fd0528edebd9bb1202f5e9f19415652d"
@@ -251,6 +276,16 @@
       "path": "BbiGeuDeok/tests/test_public.py",
       "bytes": 5152,
       "sha256": "458f7087c92a259043ef4f6ce7edfbd42f019ddd584dffe75115f6d63fde56f5"
+    },
+    {
+      "path": "BbiGeuDeok/tests/test_ui_state.cjs",
+      "bytes": 11570,
+      "sha256": "874a3b03b9e4b0df4c3dbcc048abcc48834c46cf4bea91044972d36d7bcbcf1e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 401,
+      "sha256": "09d70b794419d18ed69b9ca0ba6fa7b9fde71a3ce3a3db42b91a8438274c87dc"
     }
   ]
 }

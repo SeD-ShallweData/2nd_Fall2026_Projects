@@ -587,8 +587,11 @@ def make_server(port=8766, app=None, service=None, agent=None):
                     body, mime = page_html(), 'text/html; charset=utf-8'
                 elif parsed.path == '/plotly.js':
                     body, mime = plotly, 'text/javascript; charset=utf-8'
-                elif parsed.path == '/roa_dashboard.js':
-                    body, mime = (WORK / 'roa_dashboard.js').read_bytes(), 'text/javascript; charset=utf-8'
+                elif parsed.path in {'/dashboard.css', '/dashboard.js', '/roa_dashboard.js',
+                                     '/welfare_explorer.js', '/activity_explorer.js'}:
+                    # Explicit UI allowlist; never expose arbitrary workspace files.
+                    body = (WORK / parsed.path[1:]).read_bytes()
+                    mime = ('text/css' if parsed.path.endswith('.css') else 'text/javascript') + '; charset=utf-8'
                 elif parsed.path.startswith('/api/roa/'):
                     if any(len(v) != 1 for v in parse_qs(parsed.query, keep_blank_values=True).values()):
                         raise ValueError('중복 조회 인자')
