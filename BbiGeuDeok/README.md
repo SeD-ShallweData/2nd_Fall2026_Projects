@@ -88,3 +88,7 @@ SK텔레콤·신한카드 대회 자료, 관계망 집계, 서울시 복지자�
 R/O 표준화 원분석 생성 코드와 고정 가중치는 확보하지 못했습니다. 공급자의 SK 좌표계와 관계망 산정기간, 개포3동 반복 0값의 원인은 미확인입니다. 복지 목록과 상세의 누락·속성 충돌, 현재 자격·정원·운영 여부도 별도 확인이 필요합니다. 실제 고립 예측 성능과 정책 효과는 검증하지 않았습니다.
 
 [API·구조](docs/API.md) · [배포 사전 점검](docs/DEPLOYMENT_READINESS.md) · [동기화 절차](docs/SYNC.md) · [공개 파일 목록](PUBLIC_FILE_MANIFEST.json)
+
+## 화면 구성
+
+Overview · R/O/A 지역 신호 · SK 활동 탐색 · 복지자원 탐색 · AI Agent의 5개 페이지를 제공합니다. 공통 지역 선택은 유지하고 SK 기준월과 ROA 종합기간은 구분합니다. [UI 구조·실행·STEP 4 인계](docs/STEP3_UI.md), [디자인 출처](docs/STEP3_UI_REFERENCES.md)를 확인하세요.
