@@ -1,0 +1,183 @@
+{
+  "input_dir": "데이터/전처리 데이터_통합본",
+  "output_dir": "Code/sk_admin_mapping/outputs",
+  "layout_file": "데이터/2026빅콘테스트_sk통신인구_데이터_레이아웃/[별첨1] 테이블 정의서_(데이터셋 1) 이동전화 가입자·이동 정보.xlsx",
+  "chunksize": 50000,
+  "input_encoding": null,
+  "input_separator": null,
+  "encoding_candidates": [
+    "utf-8-sig",
+    "cp949"
+  ],
+  "columns": {
+    "month": "STD_YM",
+    "block": "BLOCK_CD",
+    "x": "X_COORD",
+    "y": "Y_COORD"
+  },
+  "tables": [
+    {
+      "name": "flow_age_pop",
+      "filename_regex": "^flow_age_pop\\.csv$",
+      "primary_key": [
+        "STD_YM",
+        "BLOCK_CD",
+        "X_COORD",
+        "Y_COORD"
+      ],
+      "row_meaning": "월·소지역·제공 좌표별 성연령(10세 단위) 일평균 유동인구",
+      "population_columns": [
+        "MAN_FLOW_POP_CNT_10G",
+        "MAN_FLOW_POP_CNT_20G",
+        "MAN_FLOW_POP_CNT_30G",
+        "MAN_FLOW_POP_CNT_40G",
+        "MAN_FLOW_POP_CNT_50G",
+        "MAN_FLOW_POP_CNT_60GU",
+        "WMAN_FLOW_POP_CNT_10G",
+        "WMAN_FLOW_POP_CNT_20G",
+        "WMAN_FLOW_POP_CNT_30G",
+        "WMAN_FLOW_POP_CNT_40G",
+        "WMAN_FLOW_POP_CNT_50G",
+        "WMAN_FLOW_POP_CNT_60GU"
+      ]
+    },
+    {
+      "name": "flow_time_pop",
+      "filename_regex": "^flow_time_pop\\.csv$",
+      "primary_key": [
+        "STD_YM",
+        "BLOCK_CD",
+        "X_COORD",
+        "Y_COORD"
+      ],
+      "row_meaning": "월·소지역·제공 좌표별 1시간 단위 시간대 일평균 유동인구",
+      "population_columns": [
+        "TMST_00",
+        "TMST_01",
+        "TMST_02",
+        "TMST_03",
+        "TMST_04",
+        "TMST_05",
+        "TMST_06",
+        "TMST_07",
+        "TMST_08",
+        "TMST_09",
+        "TMST_10",
+        "TMST_11",
+        "TMST_12",
+        "TMST_13",
+        "TMST_14",
+        "TMST_15",
+        "TMST_16",
+        "TMST_17",
+        "TMST_18",
+        "TMST_19",
+        "TMST_20",
+        "TMST_21",
+        "TMST_22",
+        "TMST_23"
+      ]
+    },
+    {
+      "name": "flow_wkdy_pop",
+      "filename_regex": "^flow_wkdy_pop\\.csv$",
+      "primary_key": [],
+      "row_meaning": null,
+      "population_columns": []
+    }
+  ],
+  "source_coordinates": {
+    "crs": null,
+    "evidence": null,
+    "unit": null,
+    "xy_order": null,
+    "scale_x": null,
+    "scale_y": null,
+    "point_meaning": "provided_point"
+  },
+  "boundary_mode": "fixed_snapshot",
+  "boundaries": {
+    "sigungu": {
+      "path": "Code/sk_admin_mapping/boundary_cache/prepared_raw/bnd_sigungu_00_2025_2Q.shp",
+      "layer": null,
+      "encoding": null,
+      "code_field": "SIGUNGU_CD",
+      "name_field": "SIGUNGU_NM",
+      "code_system": "SGIS_Korean_administrative_classification_8digit",
+      "reference_date": "2025-06-30",
+      "evidence": "https://www.data.go.kr/data/15129688/fileData.do; ZIP bnd_sigungu_00_2025_2Q; 실제 BASE_DATE=20250630, PRJ=EPSG:5179",
+      "crs_if_missing": null,
+      "crs_evidence": null
+    },
+    "emd": {
+      "path": "Code/sk_admin_mapping/boundary_cache/prepared_raw/bnd_dong_00_2025_2Q.shp",
+      "layer": null,
+      "encoding": null,
+      "code_field": "ADM_CD",
+      "name_field": "ADM_NM",
+      "code_system": "SGIS_Korean_administrative_classification_8digit",
+      "reference_date": "2025-06-30",
+      "evidence": "https://www.data.go.kr/data/15129688/fileData.do; ZIP bnd_dong_00_2025_2Q; 실제 BASE_DATE=20250630, PRJ=EPSG:5179",
+      "kind": "administrative",
+      "crs_if_missing": null,
+      "crs_evidence": null
+    }
+  },
+  "parent_crosswalk": {
+    "path": "Code/sk_admin_mapping/boundary_cache/parent_crosswalk_20250630.csv",
+    "encoding": "utf-8-sig",
+    "separator": ",",
+    "emd_column": "EMD_CD",
+    "sigungu_column": "SIGUNGU_CD",
+    "emd_code_system": "SGIS_Korean_administrative_classification_8digit",
+    "sigungu_code_system": "SGIS_Korean_administrative_classification_8digit",
+    "reference_date": "2025-06-30",
+    "evidence": "공식 코드 구성 규칙 https://sgis.mods.go.kr/html/attachFiles/%ED%95%9C%EA%B5%AD%ED%96%89%EC%A0%95%EA%B5%AC%EC%97%AD%EB%B6%84%EB%A5%98%20%EC%8B%A0%C2%B7%EA%B5%AC%20%EB%8C%80%EB%B9%84%ED%91%9C.pdf; 원본 ADM_CD와 SIGUNGU_CD 목록(동일 BASE_DATE=20250630)으로 생성. 배포 대응표를 그대로 전재한 것은 아님."
+  },
+  "block_crosswalk": {
+    "path": null,
+    "encoding": null,
+    "separator": null,
+    "block_column": null,
+    "month_column": null,
+    "sigungu_column": null,
+    "emd_column": null,
+    "sigungu_code_system": null,
+    "emd_code_system": null,
+    "valid_from_column": null,
+    "valid_to_column": null,
+    "valid_from": null,
+    "valid_to": null,
+    "evidence": null
+  },
+  "targets": [
+    {
+      "name": "강남구",
+      "sigungu_code": "11230"
+    },
+    {
+      "name": "춘천시",
+      "sigungu_code": "32010"
+    }
+  ],
+  "review": {
+    "seed": 20261005,
+    "samples_per_category": 8,
+    "near_boundary_m": 100.0,
+    "metric_crs": "EPSG:5179"
+  },
+  "schema_evidence": "사용자 첨부 성연령/시간대 테이블 정의서 사진. flow_wkdy_pop은 이 두 사진으로 확인하지 않음. SK 원본 EPSG·단위·축·배율은 미확정으로 유지.",
+  "resident_population": {
+    "months": [
+      "202507",
+      "202508",
+      "202509",
+      "202510",
+      "202511",
+      "202512"
+    ],
+    "source": "https://jumin.mois.go.kr/ageStatMonth.do",
+    "registration": "전체 (외국인 제외)",
+    "reference": "매월 말"
+  }
+}

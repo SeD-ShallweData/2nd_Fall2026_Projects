@@ -1,0 +1,48 @@
+{
+  "contract_version": "roa.integration-contract.v1",
+  "schema_version": "agent_input_integrated.v1",
+  "integration_version": "step1-roa-1",
+  "region": {"sigungu_cd": "11230", "sigungu_nm": "강남구"},
+  "expected_dongs": 22,
+  "expected_rows": 66,
+  "expected_comparable_dongs": 21,
+  "hold_adm_cd8": "11230511",
+  "reference_months": ["202510", "202511", "202512"],
+  "windows": {
+    "202510": ["202507", "202508", "202509"],
+    "202511": ["202508", "202509", "202510"],
+    "202512": ["202509", "202510", "202511"]
+  },
+  "relation_period_status": "ASSUMED_PREV_3M_UNVERIFIED",
+  "legacy_csv_rule_version": "draft-original-median-weekday",
+  "legacy_json_schema_version": "agent_input.v2",
+  "legacy_json_rule_version": "draft-v2-2026-10-19",
+  "verification_tolerances": {
+    "level_abs": 0.00000001,
+    "pct_abs": 0.0000000001,
+    "legacy_rounded_pct_abs": 0.000501
+  },
+  "inputs": {
+    "roa": {
+      "path": "데이터/관계망_활동_통합/roa_signals.csv",
+      "sha256": "85adba99fbeade5c3629bf5a7bec2f8a251497d733d1528b757169b862f18507"
+    },
+    "supplement": {
+      "path": "데이터/관계망_활동_통합/03_통합표_22동x기준월_v2.csv",
+      "sha256": "fa40a5afc52acc1916c9c9c1cc66eddd733a9789952a0d434c76dcc98c0e84c2"
+    },
+    "legacy_agent": {
+      "path": "데이터/관계망_활동_통합/08_agent_input_v2.json",
+      "sha256": "35aa5e397e2f2aa1974a2e00a09e0fa35faf9121c9a324b2d0052d9dd16fb5f3"
+    },
+    "activity": {
+      "path": "Code/sk_admin_mapping/outputs/p1_20261013/regional_metrics.csv",
+      "sha256": "f3adf7e66455517fa1f896713ba87809340fb690c846b8602e6c1aea0e1f7f82"
+    },
+    "crosswalk": {
+      "path": "데이터/관계망_활동_통합/활동변화_연결_결과/01_행정동코드_대응표.csv",
+      "sha256": "29fae5a92cbed155a2d3e4a2c4344d66b493215915864d074fedb512971c9ac0"
+    }
+  },
+  "output": "Code/sk_admin_mapping/outputs/canonical/agent/agent_input_integrated.v1.json"
+}

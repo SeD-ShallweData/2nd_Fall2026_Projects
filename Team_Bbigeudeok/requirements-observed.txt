@@ -1,0 +1,14 @@
+# Observed direct dependencies on the STEP 2 validation PC; not a complete lock.
+# Python 3.14.3, Windows. Install requirements.txt for supported version ranges.
+pandas==2.3.3
+geopandas==1.2.0
+shapely==2.1.2
+pyproj==3.8.0
+pyogrio==0.13.0
+numpy==2.5.3
+folium==0.20.0
+plotly==6.9.0
+matplotlib==3.11.2
+openpyxl==3.1.5
+ipython==9.17.1
+jupyterlab==4.6.4

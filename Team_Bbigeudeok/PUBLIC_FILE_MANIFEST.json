@@ -1,0 +1,256 @@
+{
+  "schema_version": "public-file-manifest.v1",
+  "data_included": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 141,
+      "sha256": "d44b124a37ccfedfa8af7e5eaeb8fb0a59806bd23d447c9fdf41f94b49d75337"
+    },
+    {
+      "path": ".github/workflows/team-bbigeudeok.yml",
+      "bytes": 602,
+      "sha256": "9706029b73339417820d7c16f48d198cb9ff3028c7832eb28803fd5c34995ade"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 491,
+      "sha256": "ef0afeb7a92d19b1aa96ba01d7247faf81acc441633e45a453b604c4846e448f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 406,
+      "sha256": "d964809d2211fa8046598afda3b3df3098fb91f779b1905536101057816dacae"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/01_데이터_준비.ipynb",
+      "bytes": 6377,
+      "sha256": "5532cb28bb85b630a93f0e40acccb9b83edf6817f55a50ced78cb233909b6482"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/02_생활활동_탐색.ipynb",
+      "bytes": 31497,
+      "sha256": "0a39d84cc7a5f9e1615c5a223672f916a5c7df426304b5799a64a9ca9a9122f0"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/03_공간_통합탐색.ipynb",
+      "bytes": 5190,
+      "sha256": "2ceed8ce37bd0f84f025245407fb2044f3d1e1e7edd97978797931564d9074b1"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/activity_analysis.py",
+      "bytes": 113735,
+      "sha256": "c970551ea192e941242e3ab07815d29c25b257b76da47f42afbe1f1893e44cc4"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/build_agent_input.py",
+      "bytes": 15785,
+      "sha256": "3f35a07b9d3abe8dd85a5a564412409cc5e2e63f125118d05995cc4a70e438ca"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/build_classified_agent_input.py",
+      "bytes": 5107,
+      "sha256": "749da714d6b5fee97ba73bc2682d30e28a7618126029e2d3c188f2a23df87e8e"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/column_labels.py",
+      "bytes": 16473,
+      "sha256": "10ceb5a4aa1a27d9d3c6503cd6141f7815f1aaf8be539c3cf59819f014501e00"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/config.example.json",
+      "bytes": 5720,
+      "sha256": "6ca9ae94e256a2e30a651f62767d4840bc338494958ed0c72ce2574d78f2b7b6"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/dashboard_service.py",
+      "bytes": 10203,
+      "sha256": "993d86b5628ed57ad649de9415f33062c883dccc7aaca9a287d45b67371f3a7b"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/data_preparation.py",
+      "bytes": 28686,
+      "sha256": "eb1a2a0f71b61404428dc924bae040ff8743710629b44fc4909f541956c22311"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/llm.env.example",
+      "bytes": 457,
+      "sha256": "eb5e15039b1a357ac1319aa468973d4ff641d8d961a9e445299b814a304d971b"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/llm_config.py",
+      "bytes": 5020,
+      "sha256": "f9b05b00ffbbf129340aa34e653a44cf0005185b606e891c10c74a8c9b0d60c0"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/llm_provider.py",
+      "bytes": 10999,
+      "sha256": "c671586cab2bf2b1afd4bc8daffcd343c6625bcd7ee7c8c8d212773b97beb442"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/notebook_helpers.py",
+      "bytes": 19689,
+      "sha256": "276f22260a830d5e49c33515683689b35bafd2e994523ad06fb1fa9b2750fb1b"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/project_settings.py",
+      "bytes": 5008,
+      "sha256": "e2f4e3f620e5932cd036e1ffc821b8532de661e20986795fb6ca7e2952a7c498"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/request_limits.py",
+      "bytes": 1432,
+      "sha256": "457278c7faab519f23b7f93727840eba4a2a0981a0f2b1ce419c2727356256fe"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/requirements.txt",
+      "bytes": 283,
+      "sha256": "2e57d7a51587469023d1b17e6c57e49f1354f42db9fbaef6605764951667cb8a"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/resident_population.py",
+      "bytes": 10554,
+      "sha256": "2926ee93ec2f64adfec8fc8d4d47e590a5338a935411bf0b4d8acaabe8ef4869"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/roa_agent.py",
+      "bytes": 21715,
+      "sha256": "95dfc7039c0dbcb832e36dba6766200104fe3bdb9b12e76c1908f8d122d5225f"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/roa_classification.py",
+      "bytes": 19771,
+      "sha256": "31dbd36a1ea834cd0c3af6905c9821534bb6d0515940cd4078859f5ae73ff6a6"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/roa_contract.json",
+      "bytes": 1959,
+      "sha256": "336b77969b359e10f3dc233173ba4a6546c8f7e7d114f5495697e4802edc09da"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/roa_dashboard.js",
+      "bytes": 26184,
+      "sha256": "319d8833b215399ced89f42276e68ffb41ed85c0961f30241c8d814810f74f73"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/roa_data.py",
+      "bytes": 21916,
+      "sha256": "5d85159ff0e9b41167b216df2525b26c32b5529fbd91c5fa02bcaaa8432d9fd2"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/run_dashboard.py",
+      "bytes": 472,
+      "sha256": "07d20668a5caa5587aea5ba5561a104d4014992a5d1cb6563177623f086fe9b1"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/security_audit.py",
+      "bytes": 2381,
+      "sha256": "28a3ee6e5b94bb4a0c6674411128a95d33bffbca8e5060553d10626ad8bb13e1"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/seoul.env.example",
+      "bytes": 312,
+      "sha256": "1f7b4ee7747eb3ec98479ab84d7566e5393d4515a45815744d6310240d00efaa"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/seoul_config.py",
+      "bytes": 1599,
+      "sha256": "bec882cc0dcfbeccbca930333cfcb9777ea6da7401c800147e9f2fc884132c50"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/sk_admin_mapping.py",
+      "bytes": 76635,
+      "sha256": "cceaf394bb82260fd0c3fa08c8b8598710649a6882466f05ba627cc3caf2a76f"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/spatial_explorer.html",
+      "bytes": 22645,
+      "sha256": "669cf0835eae319c66a7a1be0902bf0e4bf354964e96341b29bd6fee089a27db"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/spatial_explorer.py",
+      "bytes": 41916,
+      "sha256": "9be593cdae01ae85a2b22d60326c1f1b02240e31534714527fe3370cfd4fcc9c"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/welfare_api.py",
+      "bytes": 26246,
+      "sha256": "02f53b567fc7aaaecea433381af8f4cf2408d9b6d3836d94fe9b873245fb3fe9"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/welfare_api_manifest.json",
+      "bytes": 5225,
+      "sha256": "506e20e5a90bcde29e4fcc39e6b8d751c34ce1224a06cc906b93e778fe68cf54"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/welfare_contract.json",
+      "bytes": 3040,
+      "sha256": "1de2607aca52361cd02d08bea9256251ee86e3f0bcc9e66ac20e46c0665e669b"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/welfare_resources.py",
+      "bytes": 31221,
+      "sha256": "bb51d2dd5df6d799f194933e2a79b5e1b57f61b257c7f206e87c0b8c2bd1e5b3"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/welfare_tool_contract.json",
+      "bytes": 4852,
+      "sha256": "2980b7590bfe84659d0bcb8839ebbf74648f9cb9dce8f5b791e3b4ab748d823c"
+    },
+    {
+      "path": "Team_Bbigeudeok/Code/sk_admin_mapping/workflow_io.py",
+      "bytes": 2276,
+      "sha256": "711b1cb0585444714ef33abfbde299ec29b3a26341efd0ae5987f327b2b3cd67"
+    },
+    {
+      "path": "Team_Bbigeudeok/LICENSE_NOTICE.md",
+      "bytes": 1021,
+      "sha256": "9c5ade9690655f8d20232dd280ad68a3df866deed0291512479513ad7fccfd5e"
+    },
+    {
+      "path": "Team_Bbigeudeok/README.md",
+      "bytes": 6748,
+      "sha256": "7038e386f57de7bfbc8a1d821c40674b0f88739ca58dbe84d55a324d6bb4ea80"
+    },
+    {
+      "path": "Team_Bbigeudeok/docs/API.md",
+      "bytes": 2471,
+      "sha256": "e5fdaf92ccabf6268075b92221e3be7d45baf3823967373babcab110befc8628"
+    },
+    {
+      "path": "Team_Bbigeudeok/docs/DATA_AND_RIGHTS.md",
+      "bytes": 2914,
+      "sha256": "58c879ee90824ce5c708b709712ad8e974c06959d79f43ed0a80e720b96ea7e0"
+    },
+    {
+      "path": "Team_Bbigeudeok/docs/DEPLOYMENT_READINESS.md",
+      "bytes": 3678,
+      "sha256": "c216f0109c8db17e8fef6fab857a1a0a6fa2eb9fe33a10f04d567f2a9b958780"
+    },
+    {
+      "path": "Team_Bbigeudeok/docs/REPRODUCIBILITY.md",
+      "bytes": 4015,
+      "sha256": "09e2032ac730f24c944ee495cda556a0826f884d40012ddd8a99ae6db3153f04"
+    },
+    {
+      "path": "Team_Bbigeudeok/docs/SYNC.md",
+      "bytes": 2393,
+      "sha256": "9aa14a14b0acfeef7fe6d040536ffa4d07eafaafb403e921da4613df9cbddfac"
+    },
+    {
+      "path": "Team_Bbigeudeok/requirements-observed.txt",
+      "bytes": 349,
+      "sha256": "1b6c8322bb922a6fa95a96eae3e5f20071916e8a17b29c21304f8da161eb5fc5"
+    },
+    {
+      "path": "Team_Bbigeudeok/scripts/check_public.py",
+      "bytes": 3758,
+      "sha256": "69c336aad46bc15ec1d3b81462fa77a58e5a2f78f0d1968a1cf72536b784b2c7"
+    },
+    {
+      "path": "Team_Bbigeudeok/tests/test_public.py",
+      "bytes": 5152,
+      "sha256": "458f7087c92a259043ef4f6ce7edfbd42f019ddd584dffe75115f6d63fde56f5"
+    }
+  ]
+}
