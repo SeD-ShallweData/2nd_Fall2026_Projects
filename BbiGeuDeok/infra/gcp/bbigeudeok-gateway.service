@@ -1,0 +1,28 @@
+[Unit]
+Description=BbiGeuDeok persistent link authentication gateway
+After=bbigeudeok-backend.service
+Requires=bbigeudeok-backend.service
+RequiresMountsFor=/srv/bbigeudeok
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=bbigeudeok
+Group=bbigeudeok
+WorkingDirectory=/srv/bbigeudeok/app
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/bbigeudeok-venv/bin/python -B infra/gcp/gateway.py --settings /etc/bbigeudeok/settings.json
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+MemoryMax=256M
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/srv/bbigeudeok/state
+
+[Install]
+WantedBy=multi-user.target

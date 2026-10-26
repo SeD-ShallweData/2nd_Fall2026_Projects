@@ -1,0 +1,13 @@
+{
+  "mode": "dashboard",
+  "gcp_data_transfer_approved": false,
+  "data_rights_confirmed": false,
+  "access_basis": "REQUIRES_EXPLICIT_AUTHORIZATION",
+  "public_host": "your-team.your-tailnet.ts.net",
+  "state_db": "/srv/bbigeudeok/state/runtime.sqlite",
+  "access_secret_file": "/srv/bbigeudeok/state/access.secret",
+  "llm_env_file": "/etc/bbigeudeok/upstage.env",
+  "seoul_env_file": "/etc/bbigeudeok/seoul-not-configured.env",
+  "baseline_llm_questions": 0,
+  "baseline_provider_reservations": 0
+}

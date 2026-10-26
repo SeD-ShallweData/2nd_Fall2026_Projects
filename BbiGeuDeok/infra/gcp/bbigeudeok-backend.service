@@ -1,0 +1,32 @@
+[Unit]
+Description=BbiGeuDeok verified dashboard backend
+After=network-online.target
+Wants=network-online.target
+RequiresMountsFor=/srv/bbigeudeok
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=notify
+NotifyAccess=main
+User=bbigeudeok
+Group=bbigeudeok
+WorkingDirectory=/srv/bbigeudeok/app
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/bbigeudeok-venv/bin/python -B infra/gcp/runtime_backend.py --settings /etc/bbigeudeok/settings.json
+Restart=on-failure
+RestartSec=15
+TimeoutStartSec=240
+TimeoutStopSec=20
+MemoryHigh=5G
+MemoryMax=6G
+OOMPolicy=stop
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/srv/bbigeudeok/state /srv/bbigeudeok/app/Code/sk_admin_mapping/outputs/validation/p0_runtime
+
+[Install]
+WantedBy=multi-user.target

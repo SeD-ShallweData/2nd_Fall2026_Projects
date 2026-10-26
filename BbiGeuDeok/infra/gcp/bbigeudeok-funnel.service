@@ -1,0 +1,14 @@
+[Unit]
+Description=BbiGeuDeok persistent HTTPS Funnel configuration
+After=tailscaled.service bbigeudeok-gateway.service network-online.target
+Requires=tailscaled.service
+Wants=bbigeudeok-gateway.service network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/tailscale funnel --bg --https=443 http://127.0.0.1:8767
+TimeoutStartSec=60
+
+[Install]
+WantedBy=multi-user.target

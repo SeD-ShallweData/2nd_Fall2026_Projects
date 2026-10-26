@@ -1,0 +1,10 @@
+[Unit]
+Description=BbiGeuDeok component and authenticated readiness check
+After=bbigeudeok-backend.service bbigeudeok-gateway.service tailscaled.service
+RequiresMountsFor=/srv/bbigeudeok
+
+[Service]
+Type=oneshot
+ExecStart=/opt/bbigeudeok-venv/bin/python -B /srv/bbigeudeok/app/infra/gcp/healthcheck.py
+TimeoutStartSec=100
+UMask=0077

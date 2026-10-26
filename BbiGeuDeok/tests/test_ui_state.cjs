@@ -71,3 +71,21 @@ test('local requests and successful protected demo requests retain existing JSON
     assert.equal((await e.scope.Dashboard.request('/api/catalog')).synthetic,true);assert.equal(calls.length,1);assert.equal(calls[0].redirect,remote?'manual':undefined);
   }
 });
+
+
+test('quota failures show readable messages for local and GCP dashboards',async()=>{
+  for(const source of ['dashboard.js','../../infra/gcp/dashboard.js']){
+    for(const [error,expected] of [
+      [{code:'DEMO_LLM_HOURLY_LIMIT'},/시간당 질문 30회/],
+      [{code:'DEMO_LLM_DAILY_LIMIT'},/하루 질문 100회/],
+      [{code:'DEMO_LLM_GLOBAL_DAILY_LIMIT'},/전체 하루 질문 1,000회/],
+      [{code:'DEMO_AGENT_BUSY'},/다른 질문에 응답 중/],
+      [{code:'UNKNOWN_CODE'},/UNKNOWN_CODE/],
+      [{message:'server message'},/server message/],
+      ['legacy message',/legacy message/]
+    ]){
+      const e=environment(source,{fetch:async()=>({ok:false,status:429,json:async()=>({error})})});
+      await assert.rejects(e.scope.Dashboard.request('/api/agent'),expected);
+    }
+  }
+});

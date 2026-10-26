@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/workflows/team-bbigeudeok.yml",
-      "bytes": 830,
-      "sha256": "4081a305a8d0500d5e918d09cc758d2bc7aa56cc7b60da30e5226d40a4ef86e5"
+      "bytes": 959,
+      "sha256": "c755f27010be997d91d0973e8014cd0bbdf8ee1c5a24befbbb4423d1e17118ec"
     },
     {
       "path": ".gitignore",
@@ -69,8 +69,8 @@
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/dashboard.js",
-      "bytes": 8151,
-      "sha256": "c0e049f13897b32c9e1f2516ac832d6ca6564c72603aa852700ce7ebb4b3404d"
+      "bytes": 9326,
+      "sha256": "a49611e2fd78cf772244530bcb2b745c42d47266d1c6f8f945133df0e0f19938"
     },
     {
       "path": "BbiGeuDeok/Code/sk_admin_mapping/dashboard_service.py",
@@ -224,8 +224,8 @@
     },
     {
       "path": "BbiGeuDeok/README.md",
-      "bytes": 7504,
-      "sha256": "674da34061dd07c4d3aa8df3bc9f2221f9679410e24da454bc7e799d9bd8850d"
+      "bytes": 7750,
+      "sha256": "ae7f761e0e8961561b5f106ae6021205146611732804f61f8244f756f34a0ee6"
     },
     {
       "path": "BbiGeuDeok/docs/API.md",
@@ -239,13 +239,18 @@
     },
     {
       "path": "BbiGeuDeok/docs/DEPLOYMENT_READINESS.md",
-      "bytes": 3885,
-      "sha256": "8d21673930f14fc333195662b2711786e4f904fc642b84559e56a5c843f333d8"
+      "bytes": 4170,
+      "sha256": "412c6877aedb50b0b1e4ad508f68ac4214539553e337cdd20b5c9608a55e9401"
+    },
+    {
+      "path": "BbiGeuDeok/docs/GCP_RUNTIME.md",
+      "bytes": 3128,
+      "sha256": "25a3ee4e3673d8ef3e48b0107b461dfb920c66f2beb318874da23d8601a48fdf"
     },
     {
       "path": "BbiGeuDeok/docs/REPRODUCIBILITY.md",
-      "bytes": 4015,
-      "sha256": "09e2032ac730f24c944ee495cda556a0826f884d40012ddd8a99ae6db3153f04"
+      "bytes": 4300,
+      "sha256": "bb0097fff81b9a55725f2737586ea1a86e9b52e2ffa8ed623fa10a5e81d0ad09"
     },
     {
       "path": "BbiGeuDeok/docs/STEP3_UI.md",
@@ -259,13 +264,113 @@
     },
     {
       "path": "BbiGeuDeok/docs/STEP4A_DEMO.md",
-      "bytes": 5286,
-      "sha256": "5ac8e82fcd90d78e4a7f071c9cdced52fd80ee458dfff59029e45c09272a796d"
+      "bytes": 5571,
+      "sha256": "7fc4613725e6a9d8924475ec0f496d1033c954858dbf819a3bd739d3990809a7"
+    },
+    {
+      "path": "BbiGeuDeok/docs/SUBMISSION_BASELINE.md",
+      "bytes": 2750,
+      "sha256": "19ab641bc533d0a35e4c133631df95a3ef13448558687b32289fd2dd34ea40f8"
     },
     {
       "path": "BbiGeuDeok/docs/SYNC.md",
       "bytes": 4331,
       "sha256": "249e9192f3773f5d7caf82971aba5921fd0528edebd9bb1202f5e9f19415652d"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/bbigeudeok-backend.service",
+      "bytes": 801,
+      "sha256": "b19eaed6a8ea4719d77a99fef29e10eeba3e76c00c57224ab330300a3a5c2792"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/bbigeudeok-funnel.service",
+      "bytes": 401,
+      "sha256": "2b3991f80ebabded9addad1a995c80fe94834f5e817cb81cac2bb9056d221231"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/bbigeudeok-gateway.service",
+      "bytes": 680,
+      "sha256": "197a1985d3abd267ae83245ac77f47a4716afb39cb213c2057fb3d7e872dd582"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/bbigeudeok-health.service",
+      "bytes": 332,
+      "sha256": "b5e169986d2d3a39f0e221a7cafe910dffe117069da39695da62bcacc4bad467"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/bbigeudeok-health.timer",
+      "bytes": 191,
+      "sha256": "aeb5fca93e96f84d966ee2e165a72b7e44fbba2080e6b2d4fa6c92cc8ad18805"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/bootstrap.sh",
+      "bytes": 1585,
+      "sha256": "540dbfd565f1f4b1a6abeeeb5036f3f478963b16252e5c4009eb64ad1fe5597f"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/dashboard.js",
+      "bytes": 10055,
+      "sha256": "9c5545de191173477c27460508b5a2add5505c947fd5534a67f183e02eb4acdb"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/gateway.py",
+      "bytes": 8157,
+      "sha256": "9284856b8e64e82e13a6f28ba5552317449a3125c0d0630703979d7c1193df64"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/healthcheck.py",
+      "bytes": 5906,
+      "sha256": "0513593a8f61818a8bf7b33c7e02b37d0c254f4c96cfe4a71aabf9c1a770d7d9"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/install_application.sh",
+      "bytes": 1403,
+      "sha256": "32552e5a296bf7d2655b8d7854c16e240381de2cabab7bf2a1217a558a6a7379"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/migration.py",
+      "bytes": 6507,
+      "sha256": "dd2e077385a430cf73870e21d7d44201aceffa3bffdcc3c49e7fafe00f73ce72"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/requirements-linux.txt",
+      "bytes": 201,
+      "sha256": "1464f51f7072a460ab24a6618cdac9933c73eb5fcac4d9381111d70ac7c2e07b"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/runtime_backend.py",
+      "bytes": 2263,
+      "sha256": "a3e4195d7d7de17593fa0bd7e076069f222b0af7fa842233206f617268a797b1"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/settings.example.json",
+      "bytes": 502,
+      "sha256": "7a46b52e7f09bdd26ef19cf2dbf033f16d4c154ca045621c485fde651df9bc3b"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/state_store.py",
+      "bytes": 9325,
+      "sha256": "664eb26f283779002f08daa9ebd98ba0ce13c69399fe940e68a3a427990d23a7"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/test_gateway.py",
+      "bytes": 7357,
+      "sha256": "2db2b270340d85b8182c75d8ce7b4cc94427eacfa779c37c2aaf74db36575923"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/test_healthcheck.py",
+      "bytes": 2081,
+      "sha256": "417d79ea0441baefb8a2f8b1622435c8e8122e08d13fb3a8a720f3aa94f608bc"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/test_migration.py",
+      "bytes": 2207,
+      "sha256": "073755c4a1e12b88dce5620a3b60b2c2f232960a898c8d7278e4f4747b8a34ac"
+    },
+    {
+      "path": "BbiGeuDeok/infra/gcp/test_state_store.py",
+      "bytes": 6967,
+      "sha256": "50561854e28a3fbb04daab1980b45add4736aaea52878a986a0b14624a184667"
     },
     {
       "path": "BbiGeuDeok/requirements-observed.txt",
@@ -284,8 +389,8 @@
     },
     {
       "path": "BbiGeuDeok/tests/test_ui_state.cjs",
-      "bytes": 13448,
-      "sha256": "65856ddba458ef4097a823f0e6e6e841d05e3f05a6b54645267d4cf4e86089b8"
+      "bytes": 14253,
+      "sha256": "a9cb5fdfa3810d163fc4fa67b028780e4a352db5bcd59b90656b1242ecdda9f1"
     },
     {
       "path": "BbiGeuDeok/tools/step4/README.md",

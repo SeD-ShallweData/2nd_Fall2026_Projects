@@ -20,6 +20,8 @@ jobs:
       - run: python -B -m unittest discover -s tests -v
       - name: Synthetic demo gateway boundaries (loopback only)
         run: python -B tools/step4/test_demo_gateway.py
+      - name: GCP persistent runtime synthetic checks
+        run: python -B -m unittest discover -s infra/gcp -p "test_*.py" -v
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
